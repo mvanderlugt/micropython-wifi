@@ -1,8 +1,8 @@
 {
   "version": "0.1.0",
   "urls": [
-    ["lib_template/__init__.py", "github:mvanderlugt/micropython-lib-template/__init__.py"],
-    ["lib_template/hello.py", "github:mvanderlugt/micropython-lib-template/hello.py"]
+    ["wifi/__init__.py", "github:mvanderlugt/micropython-wifi/__init__.py"],
+    ["wifi/hello.py", "github:mvanderlugt/micropython-wifi/wifi.py"]
   ],
   "deps": []
 }
