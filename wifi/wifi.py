@@ -1,3 +1,5 @@
+from asyncio import sleep_ms, CancelledError
+from logging import get_logger, Logger
 from time import ticks_ms, ticks_diff
 
 from network import WLAN, STA_IF  # todo micropython specific imports
@@ -7,10 +9,6 @@ try:
 except ImportError:
     def country(country_code: str):
         pass  # no-op for devices that don't support country
-
-from asyncio import sleep_ms, CancelledError
-
-from logging import get_logger, Logger
 
 
 class Wifi:

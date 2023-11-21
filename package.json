@@ -1,8 +1,8 @@
 {
   "version": "0.1.0",
   "urls": [
-    ["wifi/__init__.py", "github:mvanderlugt/micropython-wifi/__init__.py"],
-    ["wifi/wifi.py", "github:mvanderlugt/micropython-wifi/wifi.py"]
+    ["wifi/wifi.py", "github:mvanderlugt/micropython-wifi/wifi/wifi.py"],
+    ["wifi/__init__.py", "github:mvanderlugt/micropython-wifi/wifi/__init__.py"]
   ],
   "deps": [
     ["github:mvanderlugt/micropython-logging", "main"]
