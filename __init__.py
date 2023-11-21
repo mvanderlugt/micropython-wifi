@@ -1,2 +1,1 @@
-
-
+from .wifi import Wifi
