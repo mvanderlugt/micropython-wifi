@@ -8,14 +8,7 @@ except ImportError:
     def country(country_code: str):
         pass  # no-op for devices that don't support country
 
-try:
-    from uasyncio import sleep_ms, CancelledError
-except ImportError:
-    from asyncio import sleep, CancelledError
-
-
-    def sleep_ms(millis: int):
-        sleep(millis / 1000)
+from asyncio import sleep_ms, CancelledError
 
 from logging import get_logger, Logger
 

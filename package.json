@@ -4,6 +4,8 @@
     ["wifi/__init__.py", "github:mvanderlugt/micropython-wifi/__init__.py"],
     ["wifi/wifi.py", "github:mvanderlugt/micropython-wifi/wifi.py"]
   ],
-  "deps": []
+  "deps": [
+    ["github:mvanderlugt/micropython-logging", "main"]
+  ]
 }
 
