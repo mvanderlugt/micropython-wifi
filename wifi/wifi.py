@@ -12,7 +12,7 @@ except ImportError:
 
 
 class Wifi:
-    def __init__(self, ssid: str, password: str, country_code: str = 'US', power_mode=0xa11140):
+    def __init__(self, ssid: str, password: str, country_code: str = 'US', power_mode=0xa11140, reset: bool = False):
         self._ssid = ssid
         self._password = password
         self.__country_code = None  # todo move to config
@@ -20,7 +20,8 @@ class Wifi:
         self._log: Logger | None = None
 
         self.wlan: WLAN = WLAN(STA_IF)
-        self.wlan.deinit()  # clear settings from last boot
+        if reset:
+            self.wlan.deinit()  # clear settings from last boot
         self.power_mode = power_mode
         self.country_code = country_code
         self._running = False
