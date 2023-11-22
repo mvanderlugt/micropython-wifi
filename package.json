@@ -2,6 +2,7 @@
   "version": "0.1.0",
   "urls": [
     ["wifi/wifi.py", "github:mvanderlugt/micropython-wifi/wifi/wifi.py"],
+    ["wifi/wifi_configuration.py", "github:mvanderlugt/micropython-wifi/wifi/wifi_configuration.py"],
     ["wifi/__init__.py", "github:mvanderlugt/micropython-wifi/wifi/__init__.py"]
   ],
   "deps": [
